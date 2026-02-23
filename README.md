@@ -1,6 +1,6 @@
 # Plataforma Digital IPR - Modernização Industrial
 
-Este projeto consiste no desenvolvimento de uma aplicação web fullstack para a **IPR (Indústria de Plástico Reforçado)**. O objetivo é transformar o atual site institucional em uma plataforma interativa de gestão de orçamentos e catálogo de produtos técnicos.
+Este projeto consiste no desenvolvimento de uma aplicação web fullstack para a empresa onde eu trabalho atualmente chamada IPR (Industria de Plastico Reforçado) . O objetivo é transformar o atual site institucional em uma plataforma interativa de gestão de orçamentos e catálogo de produtos técnicos.
 
 ---
 
@@ -8,10 +8,11 @@ Este projeto consiste no desenvolvimento de uma aplicação web fullstack para a
 
 A IPR é uma empresa especializada em materiais compósitos (fibra de vidro) para os setores de energia e saneamento. Atualmente, a interação com o cliente para orçamentos depende de processos manuais. 
 
-**O desafio deste projeto é:**
-1. Criar um catálogo digital gerenciável (CRUD) para as soluções de Pultrusão, Moldagem e Prensagem.
-2. Implementar um fluxo de "Solicitação de Orçamento" (Transação) que garanta a integridade dos dados.
-3. Prover uma área administrativa segura para gestão desses pedidos.
+Qual o desafio e o meu objetivo com esse projeto?
+
+1- Vou criar um catalogo digital gerenciavel (CRUD) para as soluções e processos que existem dentro da empresa que no caso são Pultrusão, Moldagem e Prensagem.
+2- Implementar tambem um fluxo de orçamento e transação onde o cliente pode fazer um pedido desejado pelo proprio site garantindo a integridade dos dados.
+3- Prover tambem uma área administrativa segura para a gestao desses pedidos.
 
 ---
 
@@ -24,6 +25,8 @@ A IPR é uma empresa especializada em materiais compósitos (fibra de vidro) par
 | **Express** | Framework Web | Agilidade na criação de rotas e APIs REST seguras. |
 | **CSS Modules** | Estilização | Estilos escopados por componente, mantendo o código limpo e evitando conflitos sem complexidade extra. |
 | **PostgreSQL** | Banco de Dados | Banco relacional que garante a segurança das transações de orçamentos (ACID). |
+
+A ideia é focar nessas linguagens nao apenas para esse projeto, mas focar para aprender o suficiente para fazer projetos futuros tambem!
 
 ---
 
@@ -41,7 +44,7 @@ A IPR é uma empresa especializada em materiais compósitos (fibra de vidro) par
 
 ---
 
-## Organização de Tarefas (Desenvolvimento Individual)
+## Organização de Tarefas (Desenvolvimento individual, posso tirar e adicionar tarefas conforme for fazendo o projeto)
 
 1. [x] **Planejamento:** Definição de domínio e escolha da stack tecnológica.
 2. [ ] **Ambiente:** Setup do repositório e estrutura inicial das pastas `client` e `server`.
