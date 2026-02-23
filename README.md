@@ -10,9 +10,9 @@ A IPR é uma empresa especializada em materiais compósitos (fibra de vidro) par
 
 Qual o desafio e o meu objetivo com esse projeto?
 
-1- Vou criar um catalogo digital gerenciavel (CRUD) para as soluções e processos que existem dentro da empresa que no caso são Pultrusão, Moldagem e Prensagem.
-2- Implementar tambem um fluxo de orçamento e transação onde o cliente pode fazer um pedido desejado pelo proprio site garantindo a integridade dos dados.
-3- Prover tambem uma área administrativa segura para a gestao desses pedidos.
+1. Vou criar um catalogo digital gerenciavel (CRUD) para as soluções e processos que existem dentro da empresa que no caso são Pultrusão, Moldagem e Prensagem.
+2. Implementar tambem um fluxo de orçamento e transação onde o cliente pode fazer um pedido desejado pelo proprio site garantindo a integridade dos dados.
+3. Prover tambem uma área administrativa segura para a gestao desses pedidos.
 
 ---
 
