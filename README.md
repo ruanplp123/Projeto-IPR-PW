@@ -53,3 +53,30 @@ A ideia é focar nessas linguagens nao apenas para esse projeto, mas focar para 
 5. [ ] **API:** Desenvolvimento dos endpoints REST (CRUD de produtos).
 6. [ ] **UI/UX:** Construção das telas em React e integração com o Back-end.
 7. [ ] **Finalização:** Implementação da transação de orçamento e testes unitários.
+
+---
+
+##  Arquitetura do Sistema (Modelo C4)
+
+Para o planejamento da **Plataforma IPR**, utilizei o **Modelo C4** para detalhar a estrutura do software em diferentes níveis de abstração.
+
+### Nível 1: Diagrama de Contexto
+Este diagrama apresenta a interação do sistema com os usuários (Clientes e Administradores) e o ambiente externo.
+![Diagrama de Contexto](docs/imagens/image.png)
+
+### Nível 2: Diagrama de Contêineres
+Aqui detalhei as tecnologias escolhidas (**React** e **Node.js**) e a comunicação entre o Front-end, Back-end e Banco de Dados.
+![Diagrama de Contêiner](docs/imagens/image2.png)
+
+---
+
+## 🎨 Design UI/UX (Figma)
+
+O design da interface esta sendo planejado no **Figma**, focando em uma experiência de usuário moderna, intuitiva e responsiva, inspirada em referências de grandes indústrias e plataformas SaaS.
+
+- **Protótipo Interativo:** [https://www.figma.com/design/8vTAVVyd6u4qh3qjlBr60s/Projeto-IPR?node-id=0-1&t=NPaafT9QvBUEkvvw-1]
+- **Paleta de Cores:** Azul Industrial (#F26522), Cinza Grafite (#2D2D2D), Gelo (#F3F4F6) e Laranja Industrial(#F26522).
+
+---
+
+
