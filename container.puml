@@ -1,0 +1,20 @@
+@startuml C4_Container
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+title Diagrama de Contêiner - Plataforma Digital IPR
+
+Person(cliente, "Cliente IPR", "Usuário final do sistema." )
+
+System_Boundary(c1, "Plataforma Digital IPR") {
+    Container(web_app, "Single-Page Application", "React, Tailwind", "Fornece a interface visual para o catálogo e formulários.")
+    Container(api, "API Application", "Node.js, Express", "Processa a lógica de negócio, autenticação e transações.")
+    ContainerDb(database, "Database", "PostgreSQL/MySQL", "Armazena dados de produtos, usuários e orçamentos.")
+}
+
+System_Ext(email_system, "Sistema de E-mail", "Serviço externo de notificações.")
+
+Rel(cliente, web_app, "Usa", "HTTPS")
+Rel(web_app, api, "Faz chamadas de API", "JSON/HTTPS")
+Rel(api, database, "Lê de e escreve em", "SQL")
+Rel(api, email_system, "Envia e-mails usando", "SMTP")
+@enduml
