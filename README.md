@@ -70,7 +70,7 @@ Aqui detalhei as tecnologias escolhidas (**React** e **Node.js**) e a comunicaç
 
 ---
 
-## 🎨 Design UI/UX (Figma)
+## Design UI/UX (Figma)
 
 O design da interface esta sendo planejado no **Figma**, focando em uma experiência de usuário moderna, intuitiva e responsiva, inspirada em referências de grandes indústrias e plataformas SaaS.
 
