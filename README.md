@@ -47,8 +47,9 @@ A ideia é focar nessas linguagens nao apenas para esse projeto, mas focar para 
 ## Organização de Tarefas (Desenvolvimento individual, posso tirar e adicionar tarefas conforme for fazendo o projeto)
 
 1. [x] **Planejamento:** Definição de domínio e escolha da stack tecnológica.
-2. [ ] **Ambiente:** Setup do repositório e estrutura inicial das pastas `client` e `server`.
-3. [ ] **Database:** Modelagem das tabelas de Produtos, Usuários e Orçamentos.
-4. [ ] **API:** Desenvolvimento dos endpoints REST (CRUD de produtos).
-5. [ ] **UI/UX:** Construção das telas em React e integração com o Back-end.
-6. [ ] **Finalização:** Implementação da transação de orçamento e testes unitários.
+3. [x] **Planejamento:** Criação da arquitetura do projeto seguindo o modelo C4
+3. [ ] **Ambiente:** Setup do repositório e estrutura inicial das pastas `client` e `server`.
+4. [ ] **Database:** Modelagem das tabelas de Produtos, Usuários e Orçamentos.
+5. [ ] **API:** Desenvolvimento dos endpoints REST (CRUD de produtos).
+6. [ ] **UI/UX:** Construção das telas em React e integração com o Back-end.
+7. [ ] **Finalização:** Implementação da transação de orçamento e testes unitários.
