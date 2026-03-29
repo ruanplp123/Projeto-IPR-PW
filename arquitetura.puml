@@ -6,7 +6,7 @@ title Diagrama de Contexto - Plataforma Digital IPR
 Person(cliente, "Cliente IPR", "Empresas que buscam soluções em fibra de vidro e solicitam orçamentos." )
 Person(admin, "Administrador IPR", "Funcionário que gerencia o catálogo e responde aos orçamentos.")
 System(plataforma_ipr, "Plataforma Digital IPR", "Permite a visualização de produtos técnicos e a gestão de solicitações de orçamento.")
-
+   
 System_Ext(email_system, "Sistema de E-mail", "Serviço externo para envio de notificações de orçamento.")
 
 Rel(cliente, plataforma_ipr, "Visualiza produtos e solicita orçamentos", "HTTPS/Web")
