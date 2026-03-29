@@ -68,6 +68,10 @@ Este diagrama apresenta a interação do sistema com os usuários (Clientes e Ad
 Aqui detalhei as tecnologias escolhidas (**React** e **Node.js**) e a comunicação entre o Front-end, Back-end e Banco de Dados.
 ![Diagrama de Contêiner](docs/imagens/image2.png)
 
+### Nível 3: Diagrama de Componentes
+Nesta etapa, dei um "zoom" na **API Application (Node.js)** para detalhar como a lógica interna está organizada, incluindo os controladores de autenticação, produtos e orçamentos.
+![Diagrama de Componentes] <img width="690" height="896" alt="image" src="https://github.com/user-attachments/assets/8d30af40-1a09-4826-8dc1-8f03653d9e09" />
+
 ---
 
 ## Design UI/UX (Figma)
