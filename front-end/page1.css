@@ -1,0 +1,113 @@
+body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+}
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+     box-sizing: border-box;
+
+}
+.logo {
+    margin-right: 50px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+    gap: 150px;
+    font-size: large;
+
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.cabecalho a:hover {
+    color: #2ec4b6;
+}
+
+.botao a{
+    background-color: #2ec4b6;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: large;
+}
+
+.botao {
+    margin-left: auto;
+}
+
+.tprincipal h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+
+    
+}
+
+.tprincipal p {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.botao2{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao2 a{
+    background-color: #2ec4b6;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: large;
+}
+
+.tprincipal {
+    height: 100vh;
+
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+        url("Imagens/imgfundo.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    text-align: center;
+    color: white;
+}
+
+.destaque{
+    color: #2ec4b6;
+}
