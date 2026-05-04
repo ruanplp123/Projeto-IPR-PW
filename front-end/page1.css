@@ -111,3 +111,142 @@ body {
 .destaque{
     color: #2ec4b6;
 }
+
+.cards-section { 
+    background-color: #F3F4F6; 
+    padding: 100px 40px; 
+    text-align: center;
+}
+.titulo-secao { 
+    color: #2ec4b6; 
+    font-size: 40px; 
+    margin-bottom: 50px; 
+}
+.titulo-secao2 { 
+    color: #000000; 
+    font-size: 20px; 
+    margin-bottom: 50px;
+}
+
+
+/* Limpeza e Ajuste dos Cards */
+
+.container-cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    background: linear-gradient(145deg, #f8f8f8, #e9e9e9);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 320px;
+    position: relative;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    min-width: 320px;
+    max-width: 320px;
+    flex-shrink: 0; /* ESSENCIAL */
+}
+
+.card-image {
+    height: 250px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* O degradê que faz a imagem aparecer */
+.card-content {
+    padding: 0 20px 20px;
+    text-align: left;
+    background: transparent !important;
+}
+/* Forçando o tamanho correto para as letras nos cards */
+.card-content h3 {
+    color: #000000;
+    font-size: 24px !important; /* !important para garantir que não use os 70px do h1 */
+    margin-bottom: 10px;
+    text-transform: none;
+}
+
+.card-content p {
+    color: #000000;
+    font-size: 16px !important; /* Força o tamanho normal do texto */
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.btn-card {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px !important;
+    display: inline-block;
+}
+
+/* Efeito de Hover no Card */
+.card {
+    /* ... (mantenha o que já tem) ... */
+    transition: all 0.4s ease; /* Faz a animação ser suave */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-15px); /* O card "levanta" 15 pixels */
+    border-color: #2ec4b6; /* A borda brilha na cor de destaque */
+    box-shadow: 0 10px 30px rgba(46, 196, 182, 0.2); /* Adiciona um brilho suave embaixo */
+}
+
+/* Efeito extra: a imagem dá um leve zoom quando passa o mouse */
+.card:hover .card-image img {
+    transform: scale(1.0);
+}
+
+.card-image img {
+    transition: transform 0.4s ease; /* Suaviza o zoom da imagem */
+}
+
+/* Efeito de Hover no Botão do Card */
+.btn-card:hover {
+    text-decoration: underline;
+    color: #ffffff; /* O texto do link muda de cor no hover */
+}
+
+
+/* Tudo pra baixo é do carrossel */
+.carrossel-cards {
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background: #2ec4b6;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev { left: -30px; }
+.next { right: -30px; }
+
+.cards-wrapper {
+    overflow: hidden;
+    max-width: 1020px; /* 3 cards (320 + gap) */
+    margin: auto;
+}
