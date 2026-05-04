@@ -250,3 +250,235 @@ body {
     max-width: 1020px; /* 3 cards (320 + gap) */
     margin: auto;
 }
+
+/* ===== SEÇÃO APLICAÇÕES ===== */
+.aplicacoes-section {
+  background-color: #0d0d0d;
+  padding: 80px 60px;
+  position: relative;
+}
+
+.aplicacoes-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2ec4b6, transparent);
+}
+
+.aplicacoes-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aplicacoes-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #2ec4b6;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.aplicacoes-titulo {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.aplicacoes-titulo span {
+  color: #2ec4b6;
+  display: block;
+}
+
+.aplicacoes-descricao {
+  max-width: 300px;
+  font-size: 13px;
+  color: #888;
+  line-height: 1.7;
+  text-align: right;
+  padding-top: 10px;
+}
+
+/* Grid */
+.aplicacoes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto 36px;
+}
+
+.aplicacoes-coluna-dir {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Cards */
+.aplic-card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.07);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aplic-card--principal {
+  aspect-ratio: 4 / 3;
+}
+
+.aplic-card--pequeno {
+  min-height: 160px;
+}
+
+.aplic-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+  transition: transform 0.5s ease, filter 0.3s ease;
+  display: block;
+}
+
+.aplic-card:hover img {
+  transform: scale(1.06);
+  filter: brightness(0.5);
+}
+
+.aplic-card:hover {
+  border-color: rgba(46,196,182,0.4);
+  box-shadow: 0 0 30px rgba(46,196,182,0.1);
+}
+
+/* Número */
+.aplic-numero {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #2ec4b6;
+  line-height: 1;
+  z-index: 2;
+}
+
+.aplic-card--pequeno .aplic-numero {
+  font-size: 30px;
+  top: 14px;
+  left: 16px;
+}
+
+/* Tags */
+.aplic-tags {
+  position: absolute;
+  bottom: 70px;
+  left: 18px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.aplic-card--pequeno .aplic-tags {
+  bottom: 54px;
+  left: 14px;
+}
+
+.aplic-tag {
+  background: rgba(46,196,182,0.2);
+  border: 1px solid rgba(46,196,182,0.45);
+  color: #2ec4b6;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(4px);
+}
+
+/* Info */
+.aplic-info {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 14px 18px 18px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.9));
+  z-index: 2;
+}
+
+.aplic-info h3 {
+  font-size: 17px !important;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 5px;
+}
+
+.aplic-info p {
+  font-size: 12px !important;
+  color: #aaa;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.aplic-card--pequeno .aplic-info h3 {
+  font-size: 14px !important;
+}
+
+.aplic-card--pequeno .aplic-info p {
+  font-size: 11px !important;
+}
+
+/* Rodapé */
+.aplicacoes-rodape {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.aplicacoes-rodape p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+.aplicacoes-rodape strong {
+  color: #ffffff;
+}
+
+.aplic-nav {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.aplic-nav button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.aplic-nav button:hover {
+  background: #2ec4b6;
+  border-color: #2ec4b6;
+}

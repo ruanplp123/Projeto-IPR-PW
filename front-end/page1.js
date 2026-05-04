@@ -75,3 +75,48 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+// ===== APLICAÇÕES =====
+const aplicacoesData = [
+  {
+    num: '01',
+    img: 'Imagens/geracao-transmissao.jpg',
+    tags: ['Elétrico', 'Estrutural', 'Isolamento'],
+    titulo: 'Geração e Transmissão',
+    desc: 'Soluções robustas para redes de alta tensão, subestações e sistemas de transmissão de energia elétrica com máxima eficiência.'
+  },
+  {
+    num: '02',
+    img: 'Imagens/saneamento.jpg',
+    tags: ['Hidráulico', 'Tratamento', 'Distribuição'],
+    titulo: 'Saneamento',
+    desc: 'Soluções para infraestrutura e tratamento de água com alta durabilidade.'
+  },
+  {
+    num: '03',
+    img: 'Imagens/transformadores.jpg',
+    tags: ['Alta Tensão', 'Isolação'],
+    titulo: 'Transformadores',
+    desc: 'Peças de alto desempenho para transformadores com qualidade comprovada.'
+  }
+];
+
+let aplicAtivo = 0;
+
+function trocarCardPrincipal(idx) {
+  aplicAtivo = idx;
+  const d = aplicacoesData[idx];
+  const cp = document.querySelector('.aplic-card--principal');
+
+  cp.querySelector('img').src = d.img;
+  cp.querySelector('.aplic-numero').textContent = d.num;
+  cp.querySelector('.aplic-info h3').textContent = d.titulo;
+  cp.querySelector('.aplic-info p').textContent = d.desc;
+  cp.querySelector('.aplic-tags').innerHTML = d.tags.map(t =>
+    `<span class="aplic-tag">${t}</span>`).join('');
+}
+
+function navegarAplic(dir) {
+  aplicAtivo = (aplicAtivo + dir + aplicacoesData.length) % aplicacoesData.length;
+  trocarCardPrincipal(aplicAtivo);
+}
