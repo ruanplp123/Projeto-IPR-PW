@@ -80,21 +80,21 @@ document.addEventListener("DOMContentLoaded", () => {
 const aplicacoesData = [
   {
     num: '01',
-    img: 'Imagens/geracao-transmissao.jpg',
+    img: 'Imagens/imageSOL.png',
     tags: ['Elétrico', 'Estrutural', 'Isolamento'],
     titulo: 'Geração e Transmissão',
     desc: 'Soluções robustas para redes de alta tensão, subestações e sistemas de transmissão de energia elétrica com máxima eficiência.'
   },
   {
     num: '02',
-    img: 'Imagens/saneamento.jpg',
+    img: 'Imagens/imageTONEL.png',
     tags: ['Hidráulico', 'Tratamento', 'Distribuição'],
     titulo: 'Saneamento',
     desc: 'Soluções para infraestrutura e tratamento de água com alta durabilidade.'
   },
   {
     num: '03',
-    img: 'Imagens/transformadores.jpg',
+    img: 'Imagens/imageFAB.png',
     tags: ['Alta Tensão', 'Isolação'],
     titulo: 'Transformadores',
     desc: 'Peças de alto desempenho para transformadores com qualidade comprovada.'

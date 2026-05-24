@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos — IPR</title>
+  <link rel="stylesheet" href="page1.css">
+  <link rel="stylesheet" href="produtos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER igual ao index -->
+  <header class="header header--escuro">
+    <div class="logo">
+      <img src="Imagens/logo.jpg" alt="logo">
+    </div>
+    <nav class="cabecalho">
+      <a href="index.html#sobre">Sobre a IPR</a>
+      <a href="index.html#produtos">Produtos</a>
+      <a href="index.html#solucoes">Soluções</a>
+      <a href="index.html#contato">Fale Conosco</a>
+    </nav>
+    <div class="botao">
+      <a href="orcamento.html">Solicite um Orçamento!</a>
+    </div>
+  </header>
+
+  <!-- HERO da página -->
+  <section class="produtos-hero">
+    <div class="produtos-hero-conteudo">
+      <p class="produtos-label">Catálogo Completo</p>
+      <h1>Nossos <span>Produtos</span></h1>
+      <p class="produtos-hero-sub">Encontre a solução ideal em materiais compósitos para o seu projeto industrial.</p>
+      <a href="page1.html" class="btn-voltar">← Voltar para o início</a>
+    </div>
+  </section>
+
+  <!-- FILTROS -->
+  <section class="produtos-filtros-section">
+    <div class="filtros-wrapper">
+      <button class="filtro-btn filtro-btn--ativo" onclick="filtrar('todos', this)">Todos</button>
+      <button class="filtro-btn" onclick="filtrar('Pultrusão', this)">Pultrusão</button>
+      <button class="filtro-btn" onclick="filtrar('BMC', this)">BMC</button>
+      <button class="filtro-btn" onclick="filtrar('Laminados', this)">Laminados</button>
+    </div>
+
+    <!-- Carrinho flutuante -->
+    <button class="carrinho-btn" onclick="abrirCarrinho()">
+      🛒 Orçamento
+      <span class="carrinho-count" id="carrinhoCount">0</span>
+    </button>
+  </section>
+
+  <!-- GRID DE PRODUTOS -->
+  <section class="produtos-grid-section">
+    <div class="produtos-grid" id="produtosGrid">
+      <!-- Preenchido pelo JS -->
+      <div class="loading">Carregando produtos...</div>
+    </div>
+  </section>
+
+  <!-- DRAWER DO CARRINHO -->
+  <div class="carrinho-overlay" id="carrinhoOverlay" onclick="fecharCarrinho()"></div>
+
+  <div class="carrinho-drawer" id="carrinhoDrawer">
+    <div class="carrinho-header">
+      <h3>Meu Orçamento</h3>
+      <button onclick="fecharCarrinho()" class="carrinho-fechar">✕</button>
+    </div>
+
+    <div class="carrinho-itens" id="carrinhoItens">
+      <p class="carrinho-vazio">Nenhum produto adicionado ainda.</p>
+    </div>
+
+    <div class="carrinho-footer">
+      <p class="carrinho-total"><span id="carrinhoTotalItens">0</span> produto(s) selecionado(s)</p>
+      <a href="orcamento.html" class="carrinho-finalizar" id="btnFinalizar">
+        Finalizar Orçamento →
+      </a>
+    </div>
+  </div>
+
+  <script src="produtos.js"></script>
+</body>
+</html>
