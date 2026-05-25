@@ -20,13 +20,12 @@ Qual o desafio e o meu objetivo com esse projeto?
 
 | Tecnologia | Papel no Projeto | Justificativa |
 | :--- | :--- | :--- |
-| **React.js** | Front-end | Arquitetura baseada em componentes, facilitando a reutilização de código e criando uma interface rápida e reativa. |
-| **Node.js** | Back-end | Alta performance com I/O não bloqueante e unificação da linguagem JavaScript em todo o stack. |
-| **Express** | Framework Web | Agilidade na criação de rotas e APIs REST seguras. |
-| **CSS Modules** | Estilização | Estilos escopados por componente, mantendo o código limpo e evitando conflitos sem complexidade extra. |
-| **PostgreSQL** | Banco de Dados | Banco relacional que garante a segurança das transações de orçamentos (ACID). |
-
-A ideia é focar nessas linguagens nao apenas para esse projeto, mas focar para aprender o suficiente para fazer projetos futuros tambem!
+| **HTML5** | Estrutura das páginas | Linguagem base para construção das telas do sistema. |
+| **CSS3** | Estilização | Estilização completa das interfaces com foco em design moderno e responsivo. |
+| **JavaScript** | Interatividade | Manipulação do DOM, requisições à API e lógica do carrinho de orçamentos. |
+| **Node.js** | Back-end | Alta performance e unificação da linguagem JavaScript em todo o stack. |
+| **Express** | Framework Web | Agilidade na criação de rotas e APIs REST. |
+| **SQLite** | Banco de Dados | Banco de dados relacional leve, sem necessidade de instalação de servidor externo. |
 
 ---
 
