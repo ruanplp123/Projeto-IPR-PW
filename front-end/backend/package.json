@@ -1,0 +1,29 @@
+{
+  "name": "projeto-ipr-pw",
+  "version": "1.0.0",
+  "description": "Este projeto consiste no desenvolvimento de uma aplicação web fullstack para a empresa onde eu trabalho atualmente chamada IPR (Industria de Plastico Reforçado) . O objetivo é transformar o atual site institucional em uma plataforma interativa de gestão de orçamentos e catálogo de produtos técnicos.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruanplp123/Projeto-IPR-PW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ruanplp123/Projeto-IPR-PW/issues"
+  },
+  "homepage": "https://github.com/ruanplp123/Projeto-IPR-PW#readme",
+  "dependencies": {
+    "better-sqlite3": "^12.10.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
