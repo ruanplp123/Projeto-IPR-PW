@@ -1,7 +1,7 @@
 const Database = require('better-sqlite3');
 const db = new Database('database.db');
 
-// Cria tabelas se não existirem
+// Vou colocar isso aqui só pra criar as tabelas caso n existam
 db.exec(`
   CREATE TABLE IF NOT EXISTS produtos (
     id INTEGER PRIMARY KEY AUTOINCREMENT,

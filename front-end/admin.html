@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — IPR</title>
+  <link rel="stylesheet" href="page1.css">
+  <link rel="stylesheet" href="admin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header header--escuro">
+    <div class="logo">
+      <img src="Imagens/logo.jpg" alt="logo">
+    </div>
+    <nav class="cabecalho">
+      <a href="index.html">← Voltar ao Site</a>
+    </nav>
+    <div class="botao">
+      <a href="produtos.html">Ver Catálogo</a>
+    </div>
+  </header>
+
+  <div class="admin-layout">
+
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+      <p class="admin-sidebar-label">Painel Admin</p>
+      <button class="admin-menu-btn admin-menu-btn--ativo" onclick="mostrarAba('produtos', this)">
+        📦 Produtos
+      </button>
+      <button class="admin-menu-btn" onclick="mostrarAba('orcamentos', this)">
+        📋 Orçamentos
+      </button>
+    </aside>
+
+    <!-- Conteúdo -->
+    <main class="admin-main">
+
+      <!-- ABA PRODUTOS -->
+      <div id="aba-produtos">
+        <div class="admin-topbar">
+          <h1>Gerenciar Produtos</h1>
+          <button class="admin-btn-novo" onclick="abrirModal()">+ Novo Produto</button>
+        </div>
+
+        <div id="msgProduto" class="admin-msg" style="display:none"></div>
+
+        <div class="admin-table-wrapper">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Imagem</th>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Destaque</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="tabelaProdutos">
+              <tr><td colspan="6" class="admin-loading">Carregando...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ABA ORÇAMENTOS -->
+      <div id="aba-orcamentos" style="display:none">
+        <div class="admin-topbar">
+          <h1>Orçamentos Recebidos</h1>
+        </div>
+
+        <div id="msgOrcamento" class="admin-msg" style="display:none"></div>
+
+        <div class="admin-table-wrapper">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Empresa</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Produtos</th>
+                <th>Data</th>
+                <th>Status</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="tabelaOrcamentos">
+              <tr><td colspan="9" class="admin-loading">Carregando...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- MODAL PRODUTO -->
+  <div class="admin-modal-overlay" id="modalOverlay" onclick="fecharModal()"></div>
+  <div class="admin-modal" id="modalProduto">
+    <div class="admin-modal-header">
+      <h3 id="modalTitulo">Novo Produto</h3>
+      <button onclick="fecharModal()" class="admin-modal-fechar">✕</button>
+    </div>
+    <div class="admin-modal-body">
+      <input type="hidden" id="produtoId">
+      <div class="admin-campo">
+        <label>Nome *</label>
+        <input type="text" id="produtoNome" placeholder="Nome do produto">
+      </div>
+      <div class="admin-campo">
+        <label>Categoria *</label>
+        <select id="produtoCategoria">
+          <option value="Pultrusão">Pultrusão</option>
+          <option value="BMC">BMC</option>
+          <option value="Laminados">Laminados</option>
+        </select>
+      </div>
+      <div class="admin-campo">
+        <label>Nome da Imagem</label>
+        <input type="text" id="produtoImagem" placeholder="ex: produto.png">
+      </div>
+      <div class="admin-campo">
+        <label>Descrição</label>
+        <textarea id="produtoDescricao" rows="3" placeholder="Descrição do produto"></textarea>
+      </div>
+      <div class="admin-campo admin-campo--check">
+        <input type="checkbox" id="produtoDestaque">
+        <label>Exibir como destaque na página inicial</label>
+      </div>
+    </div>
+    <div class="admin-modal-footer">
+      <button onclick="fecharModal()" class="admin-btn-cancelar">Cancelar</button>
+      <button onclick="salvarProduto()" class="admin-btn-salvar">Salvar Produto</button>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

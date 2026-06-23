@@ -1,0 +1,343 @@
+/* ===== LAYOUT ===== */
+.admin-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+  padding-top: 80px;
+  background: #f3f4f6;
+}
+
+/* ===== SIDEBAR ===== */
+.admin-sidebar {
+  background: #0d0d0d;
+  padding: 30px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-sidebar-label {
+  font-size: 10px !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 10px;
+  padding-left: 12px;
+}
+
+.admin-menu-btn {
+  background: none;
+  border: none;
+  color: #888;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.admin-menu-btn:hover {
+  background: rgba(46,196,182,0.1);
+  color: #2ec4b6;
+}
+
+.admin-menu-btn--ativo {
+  background: rgba(46,196,182,0.15) !important;
+  color: #2ec4b6 !important;
+}
+
+/* ===== MAIN ===== */
+.admin-main {
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.admin-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.admin-topbar h1 {
+  font-size: 24px !important;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.admin-btn-novo {
+  background: #2ec4b6;
+  color: #fff;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.admin-btn-novo:hover {
+  background: #25a99d;
+}
+
+/* ===== TABELA ===== */
+.admin-table-wrapper {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  border: 1px solid #eee;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  background: #f8f8f8;
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 12px !important;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-table td {
+  padding: 14px 16px;
+  font-size: 13px !important;
+  color: #333;
+  border-bottom: 1px solid #f5f5f5;
+  vertical-align: middle;
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-table tr:hover td {
+  background: #fafafa;
+}
+
+.admin-table img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #f0f0f0;
+}
+
+.admin-loading {
+  text-align: center;
+  color: #aaa;
+  padding: 40px !important;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px !important;
+  font-weight: 600;
+}
+
+.badge--sim { background: #d4edda; color: #155724; }
+.badge--nao { background: #f8f8f8; color: #888; }
+.badge--pendente { background: #fff3cd; color: #856404; }
+.badge--andamento { background: #cce5ff; color: #004085; }
+.badge--concluido { background: #d4edda; color: #155724; }
+.badge--cancelado { background: #f8d7da; color: #721c24; }
+
+/* Botões de ação */
+.admin-acoes {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-editar, .btn-deletar {
+  border: none;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-editar { background: #e8f4fd; color: #2e86c1; }
+.btn-deletar { background: #fde8e8; color: #c0392b; }
+.btn-editar:hover, .btn-deletar:hover { opacity: 0.8; }
+
+/* Select de status */
+.select-status {
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Mensagens */
+.admin-msg {
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 13px !important;
+  margin-bottom: 20px;
+}
+
+.admin-msg--ok { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.admin-msg--erro { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+/* ===== MODAL ===== */
+.admin-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 200;
+}
+
+.admin-modal-overlay.ativo { display: block; }
+
+.admin-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  width: 500px;
+  background: #fff;
+  border-radius: 16px;
+  z-index: 201;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.admin-modal.aberto {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.admin-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-modal-header h3 {
+  font-size: 16px !important;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.admin-modal-fechar {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #888;
+}
+
+.admin-modal-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-campo label {
+  font-size: 13px !important;
+  font-weight: 600;
+  color: #333;
+}
+
+.admin-campo input,
+.admin-campo select,
+.admin-campo textarea {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: none;
+}
+
+.admin-campo input:focus,
+.admin-campo select:focus,
+.admin-campo textarea:focus {
+  border-color: #2ec4b6;
+}
+
+.admin-campo--check {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-campo--check input {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.admin-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 24px;
+  border-top: 1px solid #eee;
+}
+
+.admin-btn-cancelar {
+  background: #f0f0f0;
+  color: #555;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-btn-salvar {
+  background: #2ec4b6;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.admin-btn-salvar:hover { background: #25a99d; }
