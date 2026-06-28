@@ -410,3 +410,11 @@
   border-color: #2ec4b6;
   color: #fff;
 }
+
+.carrinho-drawer {
+  z-index: 1000;
+}
+
+.carrinho-overlay {
+  z-index: 999;
+}

@@ -12,7 +12,7 @@ body {
     width: 100%;
     background-color: transparent;
      box-sizing: border-box;
-    z-index: 999;
+    z-index: 100;
 }
 .logo {
     margin-right: 50px;

@@ -1,0 +1,413 @@
+/* ===== HERO ===== */
+.sol-hero {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.78)),
+    url("Imagens/imgfundo.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 160px 60px 80px;
+  text-align: center;
+}
+
+/* ===== NAV INTERNA ===== */
+.sol-nav {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 40px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 80px;
+  z-index: 90;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.sol-nav-item {
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 16px 14px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.sol-nav-item:hover {
+  color: #2ec4b6;
+  border-bottom-color: #2ec4b6;
+}
+
+/* ===== MAIN ===== */
+.sol-main { background: #f3f4f6; }
+
+/* ===== SEÇÃO BASE ===== */
+.sol-secao {
+  padding: 80px 60px;
+  background: #fff;
+}
+
+.sol-secao--alt {
+  background: #f9f9f9;
+}
+
+.sol-secao--dark {
+  background: #0d0d0d;
+}
+
+.sol-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.sol-conteudo--inv {
+  direction: rtl;
+}
+
+.sol-conteudo--inv > * {
+  direction: ltr;
+}
+
+/* ===== TEXTO ===== */
+.sol-tag {
+  display: inline-block;
+  background: rgba(46,196,182,0.12);
+  color: #2ec4b6;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.sol-tag--light {
+  background: rgba(46,196,182,0.2);
+}
+
+.sol-texto h2 {
+  font-size: 32px !important;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 10px;
+}
+
+.sol-subtitulo {
+  font-size: 14px !important;
+  color: #2ec4b6;
+  font-weight: 600;
+  margin-bottom: 16px !important;
+}
+
+.sol-texto p {
+  font-size: 14px !important;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.sol-obs {
+  font-size: 12px !important;
+  color: #888 !important;
+  font-style: italic;
+}
+
+.sol-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #2ec4b6;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.sol-btn:hover {
+  background: #25a99d;
+  transform: translateY(-1px);
+}
+
+.sol-btn--light {
+  background: #2ec4b6;
+}
+
+/* ===== IMAGEM ===== */
+.sol-imagem img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.sol-imagem--dark {
+  background: #1a2a2a;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.sol-icon-box {
+  text-align: center;
+  color: #555;
+}
+
+.sol-icon-box p {
+  font-size: 13px !important;
+  margin-top: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===== APLICAÇÕES ===== */
+.sol-aplicacoes { margin: 20px 0; }
+
+.sol-aplicacoes h4,
+.sol-reforcos h4 {
+  font-size: 13px !important;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sol-tags-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sol-tags-grid span {
+  background: #f0f0f0;
+  color: #444;
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* ===== PROCESSO BMC ===== */
+.sol-processo-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.sol-proc-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #eee;
+}
+
+.sol-proc-num {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2ec4b6;
+  margin-bottom: 10px;
+}
+
+.sol-proc-card h5 {
+  font-size: 14px !important;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.sol-proc-card p {
+  font-size: 12px !important;
+  color: #777;
+  line-height: 1.6;
+  margin: 0 !important;
+}
+
+/* ===== REFORÇOS PULTRUSÃO ===== */
+.sol-reforco-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.sol-reforco-item {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 16px;
+  border-left: 3px solid #2ec4b6;
+}
+
+.sol-reforco-item strong {
+  font-size: 13px;
+  color: #111;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.sol-reforco-item p {
+  font-size: 12px !important;
+  color: #777;
+  margin: 0 !important;
+}
+
+/* ===== CABEÇALHO DE SEÇÃO ===== */
+.sol-header-secao {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.sol-header-secao h2 {
+  font-size: 32px !important;
+  font-weight: 700;
+  color: #0d0d0d;
+  margin: 10px 0 12px;
+}
+
+.sol-header-secao p {
+  font-size: 15px !important;
+  color: #666;
+}
+
+.sol-header-secao--light h2 { color: #111; }
+.sol-header-secao--light p { color: #666; }
+
+/* Escuro */
+.sol-secao--dark .sol-header-secao h2 { color: #fff; }
+.sol-secao--dark .sol-header-secao p { color: #aaa; }
+
+/* ===== SANEAMENTO ===== */
+.sol-aplicacoes-lista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+.sol-aplic-item {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(46,196,182,0.2);
+  border-radius: 12px;
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.sol-aplic-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.sol-aplic-item p {
+  font-size: 13px !important;
+  color: #bbb;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.sol-galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sol-galeria-item {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 1;
+  background: #1a2a2a;
+  border: 1px solid rgba(46,196,182,0.15);
+}
+
+.sol-galeria-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 11px;
+  color: #555;
+  padding: 16px;
+  line-height: 1.5;
+}
+
+/* ===== ELÉTRICA ===== */
+.sol-eletrica-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sol-eletrica-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px 20px;
+  text-align: center;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.sol-eletrica-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(46,196,182,0.12);
+  border-color: rgba(46,196,182,0.3);
+}
+
+.sol-eletrica-icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.sol-eletrica-card h5 {
+  font-size: 14px !important;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.sol-eletrica-card p {
+  font-size: 12px !important;
+  color: #777;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== WHATSAPP FLUTUANTE ===== */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25d366;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  z-index: 999;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 28px rgba(37,211,102,0.5);
+}
