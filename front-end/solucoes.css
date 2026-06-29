@@ -411,3 +411,54 @@
   transform: scale(1.1);
   box-shadow: 0 6px 28px rgba(37,211,102,0.5);
 }
+
+/* ===== GALERIA SANEAMENTO ===== */
+.sol-galeria-san {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sol-galeria-san-item {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  aspect-ratio: 1;
+  border: 1px solid rgba(46,196,182,0.15);
+  cursor: pointer;
+}
+
+.sol-galeria-san-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+  transition: transform 0.4s, filter 0.3s;
+  display: block;
+}
+
+.sol-galeria-san-item:hover img {
+  transform: scale(1.06);
+  filter: brightness(0.5);
+}
+
+.sol-galeria-san-label {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.85));
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 24px 12px 12px;
+  line-height: 1.4;
+}
+
+/* Título nos cards de aplicação */
+.sol-aplic-item h5 {
+  font-size: 14px !important;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
